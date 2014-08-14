@@ -1,14 +1,14 @@
 {
-  "name": "oficinadamadeira",
+  "name": "ananda",
   "version": "1.0.0",
-  "title": "Oficina da Madeira",
+  "title": "Centro Ananda",
   "homepage": "",
-  "description": "Oficina da Madeira",
+  "description": "Práticas Integrativas",
   "author": "Design: https://www.flickr.com/photos/joaofaissal/ - Code: http://about.me/jteodoro",
   "tags": "",
   "repository": {
     "type": "git",
-    "url": "https://github.com/joaotdn/oficinadamadeira.git"
+    "url": "https://github.com/joaotdn/ananda.git"
   },
   "devDependencies": {
     "grunt": "^0.4.4",
