@@ -1,15 +1,107 @@
 <!doctype html>
-<html class="no-js" lang="en">
+<html class="no-js" lang="pt-br">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Foundation</title>
+    <title>Centro Ananda | Práticas Interativas</title>
     <link rel="stylesheet" href="style.css" />
+    <!--<script src="//cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.1/modernizr.min.js"></script>-->
     <script src="bower_components/modernizr/modernizr.js"></script>
   </head>
   <body>
-    <img src="images/logo.png" alt="">
-    <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <div class="row">
+      <!-- INICIO HEADER -->
+      <header id="header" class="small-12 left">
+        <figure class="logo small-4 columns">
+          <a href="#" title="Página principal">
+            <img src="images/logo.png" alt="">
+          </a>
+        </figure><!-- logo -->
+        
+        <nav id="main-menu" class="small-12 columns">
+          <ul class="inline-list">
+            <li><h5><a href="#">quem somos</a></h5></li>
+            <li><h5><a href="#">escola om de yoga</a></h5></li>
+            <li><h5><a href="#">profissionais</a></h5></li>
+            <li><h5><a href="#">cursos</a></h5></li>
+            <li><h5><a href="#">serviços</a></h5></li>
+            <li><h5><a href="#">agenda</a></h5></li>
+            <li><h5><a href="#">ações sociais</a></h5></li>
+            <li><h5><a href="#">o lojinha</a></h5></li>
+            <li><h5><a href="#">contato</a></h5></li>
+          </ul>
+
+          <ul class="social-links inline-list small-12 left">
+            <li><a href="#" title="Siga-nos no Instagram" target="_blank"><span class="icon-instagram"></span></a></li>
+            <li><a href="#" title="Siga-nos no Facebook" target="_blank"><span class="icon-facebook"></span></a></li>
+          </ul>
+        </nav>
+      </header>
+      <!-- FIM HEADER -->
+
+      <div class="reveal-content">
+
+      <!-- INICIO SLIDE PRINCIPAL -->
+      <nav id="main-slide" class="small-12 columns rel">
+        
+        <div class="cycle-slideshow small-12 left list-slide"
+          data-cycle-fx="fade" 
+          data-cycle-timeout="10000"
+          data-cycle-slides="> div"
+        >
+        
+        <section class="small-12 abs text center">
+          <section class="cycle-pager"></section>  
+        </section>
+
+        <section id="progress"></section>
+
+          <div class="small-12 left">
+            <a href="#" title="" class="display-block"><figure class="small-12 left bg-cover" style="background-image: url(media/slide1.jpg);"></figure></a>
+            <article class="small-4 abs slide-info wow fadeInUp" data-wow-duration="1500ms">
+              <h4 class="text-low">curso</h4>
+              <h1><a href="#" class="white text-up">Ashtanga Yoga</a></h1>
+              <p class="text-up white">com yolanda albuquerque</p>
+              <h3 class="text-low">dias 13 e 14 de abril</h3>
+              <p class="white except">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque vero sint dolore unde cupiditate ullam totam labore. Quisquam, porro, temporibus possimus inventore maxime quidem mollitia dolore omnis tempora quos cupiditate.</p>
+            </article>
+          </div> 
+
+          <div class="small-12 left">
+            <a href="#" title="" class="display-block"><figure class="small-12 left bg-cover" style="background-image: url(media/slide2.jpg);"></figure></a>
+            <article class="small-4 abs slide-info wow fadeInUp" data-wow-duration="1500ms">
+              <h4 class="text-low">curso</h4>
+              <h1><a href="#" class="white text-up">Ashtanga Yoga 2</a></h1>
+              <p class="text-up white">com yolanda albuquerque</p>
+              <h3 class="text-low">dias 14 e 15 de abril</h3>
+              <p class="white except">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque vero sint dolore unde cupiditate ullam totam labore. Quisquam, porro, temporibus possimus inventore maxime quidem mollitia dolore omnis tempora quos cupiditate.</p>
+            </article>
+          </div>
+
+          <div class="small-12 left">
+            <a href="#" title="" class="display-block"><figure class="small-12 left bg-cover" style="background-image: url(media/slide3.jpg);"></figure></a>
+            <article class="small-4 abs slide-info wow fadeInUp" data-wow-duration="1500ms">
+              <h4 class="text-low">curso</h4>
+              <h1><a href="#" class="white text-up">Ashtanga Yoga 3</a></h1>
+              <p class="text-up white">com yolanda albuquerque</p>
+              <h3 class="text-low">dias 16 e 17 de abril</h3>
+              <p class="white except">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque vero sint dolore unde cupiditate ullam totam labore. Quisquam, porro, temporibus possimus inventore maxime quidem mollitia dolore omnis tempora quos cupiditate.</p>
+            </article>
+          </div>
+          
+        </div>
+      </nav>
+      <div class="small-12 left mbt"></div>
+      <!-- FIM SLIDE PRINCIPAL -->
+      
+      </div><!-- conteudo apos preload -->
+    </div><!-- row -->
+
+    <figure id="an-preload" class="small-12 text-center">
+      <div class="icon-an-loader centered"></div>
+    </figure>
+    <!--<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>-->
+    <script src="bower_components/jquery/dist/jquery.min.js"></script>
     <script src="js/scripts.js"></script>
   </body>
 </html>

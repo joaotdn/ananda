@@ -1,0 +1,115 @@
+//Seletores
+//-----------------------------------------------------
+body {
+	background-image: url(images/bg-body.jpg);
+	background-repeat: no-repeat;
+	background-position: top right;
+}
+
+figure {
+	margin: 0;
+}
+ul {
+	margin: 0;
+}
+
+//Classes utilitárias
+//-----------------------------------------------------
+.rel {
+	position: relative;
+}
+
+.abs {
+	position: absolute;
+}
+
+.text-up {
+	text-transform: uppercase;
+}
+
+.text-low {
+	text-transform: lowercase;
+}
+
+.font-body {
+	font-family: 'Gotham-Book' !important;
+}
+
+.font-header {
+	font-family: 'CoolveticaRg-Regular' !important;
+}
+
+.font-black {
+	font-family: 'Gotham-Black' !important;
+}
+
+.display-block {
+	display: block;
+}
+
+.display-tb {
+	display: table;
+}
+
+.display-tbc {
+	display: table-cell;
+	vertical-align: middle;
+}
+
+.display-ib {
+	display: inline-block;
+}
+
+.white {
+	color: #fff;
+}
+
+.blue {
+	color: $primary-color;
+}
+
+.trs {
+	@include transition;
+}
+
+.trs-color {
+	@include transition(color .3s linear);
+}
+
+.mbt {
+	margin-bottom: rem-calc(20);
+}
+
+.no-mbt {
+	margin-bottom: 0;
+}
+
+.mtp {
+	margin-top: rem-calc(20);
+}
+
+.pr {
+	padding-right: rem-calc(10);
+}
+
+.pl {
+	padding-left: rem-calc(10);
+}
+
+.text-except {
+	font-size: rem-calc(13);
+}
+
+.centered {
+	margin: 0 auto;
+}
+
+.bg-cover {
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+a {
+	@extend .trs-color;
+}

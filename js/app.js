@@ -1,3 +1,57 @@
+//Preloader
+$('.reveal-content').jpreLoader({
+	//autoClose: false,
+	splashID: '#an-preload',
+	showPercentage: false,
+	splashVPos: "50%"
+}, function() {
+	$('.reveal-content').fadeIn('slow');
+
+	wow = new WOW(
+      {
+        animateClass: 'animated',
+        offset:       100
+      }
+    );
+    wow.init();
+});
+
 // Foundation JavaScript
 // Documentation can be found at: http://foundation.zurb.com/docs
 $(document).foundation();
+
+/*
+	Barra de progresso no slide principal
+ */
+var progress = $('#progress'),
+    slideshow = $( '.cycle-slideshow' );
+
+slideshow.on( 'cycle-initialized cycle-before', function( e, opts ) {
+    progress.stop(true).css( 'width', 0 );
+});
+
+slideshow.on( 'cycle-initialized cycle-after', function( e, opts ) {
+    if ( ! slideshow.is('.cycle-paused') )
+        progress.animate({ width: '100%' }, opts.timeout, 'linear' );
+});
+
+slideshow.on( 'cycle-paused', function( e, opts ) {
+   progress.stop(); 
+});
+
+slideshow.on( 'cycle-resumed', function( e, opts, timeoutRemaining ) {
+    progress.animate({ width: '100%' }, timeoutRemaining, 'linear' );
+});
+
+/*
+	Chamar wow apos terminar slide
+ */
+$( '.list-slide' ).on( 'cycle-before', function( event, opts ) {
+    wow = new WOW(
+      {
+        animateClass: 'animated',
+        offset:       100
+      }
+    );
+    wow.init();
+});

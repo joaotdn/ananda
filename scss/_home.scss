@@ -1,0 +1,56 @@
+//SLIDE PRINCIPAL
+//****************************************************
+#main-slide {
+	margin-top: rem-calc(10);
+
+	figure {
+		height: rem-calc(550);
+		@extend .trs;
+	}
+
+	.cycle-slideshow {
+		overflow: visible !important;
+	}
+
+	&:hover {
+		figure {
+			opacity: .7;
+		}
+	}
+}
+
+.slide-info {
+	background: $secondary-color;
+	right: 0;
+	top: -6%;
+	padding: rem-calc(10) rem-calc(20) rem-calc(20) rem-calc(20);
+	@extend .trs;
+
+	&:hover {
+		background-color: $primary-color !important;
+	}
+
+	p {
+		margin: 0;
+
+		&.except {
+			font-size: rem-calc(14);
+		}
+	}
+
+	h1, h4 {
+		line-height: 1;
+	}
+
+	a:hover {
+		color: $secondary-color !important;
+	}
+}
+
+#progress {
+	height: 5px;
+	background-color: $primary-color;
+	@extend .abs;
+	bottom:0;
+	z-index: 999;
+}

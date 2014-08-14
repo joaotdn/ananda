@@ -1,0 +1,33 @@
+#header {
+	padding-top: rem-calc(60);
+}
+
+
+//MENU PRINCIPAL
+//****************************************************
+#main-menu {
+	margin-top: rem-calc(40);
+
+	a {
+		color: #555;
+
+		&:hover {
+			color: $primary-color;
+			border-color: $primary-color;
+		}	
+	}
+}
+.social-links {
+	margin-bottom: 0;
+	
+	a {
+		padding: rem-calc(5) rem-calc(6);
+		border: 1px solid #555;
+		border-radius: 100%;
+		line-height: 1;
+	}
+
+	li:not(:first-child) {
+		margin-left: rem-calc(5);
+	}
+}
