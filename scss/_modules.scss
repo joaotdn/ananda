@@ -1,0 +1,88 @@
+/*
+	Blocos de conteudos
+ */
+.content-block {
+	article {
+		background-color: #FFF;
+		padding: rem-calc(20) rem-calc(10);
+		&.fb-like-box {
+			padding: rem-calc(20) rem-calc(4);
+		}
+	}
+
+	a {
+		color: $body-font-color;
+		&.primary {
+			color: $primary-color;
+		}
+		&:hover {
+			color: $primary-color;
+		}
+	}
+
+	.except {
+		font-size: rem-calc(12);
+	}
+
+	p {
+		margin-bottom: rem-calc(10);
+		&:last-child {
+			margin-bottom: 0;
+		}
+	}
+
+	figure {
+		@extend .trs;
+	}
+
+	&:hover {
+		figure {
+			opacity: .8;
+		}
+	}
+}
+
+%common-thumb {
+	top: 0;
+	height: 100%;
+}
+
+.content-thumb-right {
+	right: 0;
+	@extend %common-thumb;
+}
+
+.content-thumb-left {
+	left: 0;
+	@extend %common-thumb;
+}
+
+.content-thumb-top {
+	height: rem-calc(150);
+	@extend .trs;
+	&:hover {
+		opacity: .8;
+	}
+}
+
+.social-actions {
+	figure {
+		height: rem-calc(200);
+	}
+}
+
+//Rodape
+.icon-footer {
+	margin-right: rem-calc(20);
+}
+#footer,#footer-mobile {
+	p,h5 {
+		color: #acacac;
+	}
+	h5 {
+		letter-spacing: rem-calc(1.5);
+	}
+	p {
+		font-size: rem-calc(14);
+	}
+}

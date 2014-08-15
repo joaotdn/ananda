@@ -12,6 +12,12 @@
 		overflow: visible !important;
 	}
 
+	.button-white {
+		@extend .abs;
+		top: 100%;
+		right: 0;
+	}
+
 	&:hover {
 		figure {
 			opacity: .7;
@@ -22,13 +28,9 @@
 .slide-info {
 	background: $secondary-color;
 	right: 0;
-	top: -6%;
+	
 	padding: rem-calc(10) rem-calc(20) rem-calc(20) rem-calc(20);
 	@extend .trs;
-
-	&:hover {
-		background-color: $primary-color !important;
-	}
 
 	p {
 		margin: 0;
@@ -43,7 +45,7 @@
 	}
 
 	a:hover {
-		color: $secondary-color !important;
+		color: #fff;
 	}
 }
 
@@ -53,4 +55,23 @@
 	@extend .abs;
 	bottom:0;
 	z-index: 999;
+}
+
+.slide-pager {
+	z-index: 999;
+	text-align: center;
+	bottom: 20px;
+	
+	span {
+		@extend .display-ib;
+		cursor: pointer;
+		padding: 10px;
+		background-color: #FFF;
+		border-radius: 100%;
+		margin: 0 5px;
+
+		&.cycle-pager-active {
+			background-color: $primary-color;
+		}
+	}
 }

@@ -1,0 +1,17 @@
+/*
+	Escola om de yoga
+ */
+.yoga-school {
+	height: rem-calc(550);
+}
+
+.big-title {
+	padding: rem-calc(20);
+	right: 0;
+	background: $primary-color;
+	top: -6%;
+
+	h1 {
+		font-size: rem-calc(100);
+	}
+}

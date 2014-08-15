@@ -1,0 +1,75 @@
+@media #{$small-only} {
+	/*
+		Slide principal
+	 */
+	.slide-info {
+		top: none;
+		bottom: 0;
+		background-color: rgba($secondary-color, .8);
+	}
+	.slide-pager {
+		bottom: none;
+		top: rem-calc(20);
+	}
+	#main-slide {
+		figure {
+			height: rem-calc(400);
+		}
+	}
+	.except {
+		display: none;
+	}
+
+	/*
+		Escola de youga
+	 */
+	.yoga-school {
+		height: rem-calc(400);
+	}
+
+	.big-title {
+		top: 0;
+		h1 {
+			font-size: rem-calc(24);
+		}
+	}
+}
+
+@media #{$medium-only} {
+	.row {
+		width: rem-calc(768) !important;
+		min-width: rem-calc(768) !important;
+		max-width: rem-calc(768) !important;
+	}
+	/*
+		Slide principal
+	 */
+	.slide-info {
+		top: 0;
+	}
+	.except {
+		display: none;
+	}
+
+	.big-title {
+		top: 0;
+		h1 {
+			font-size: rem-calc(50);
+		}
+	}
+}
+
+@media #{$large-up} {
+	.row {
+		width: rem-calc(980) !important;
+		min-width: rem-calc(980) !important;
+		max-width: rem-calc(980) !important;
+	}
+
+	/*
+		Slide principal
+	 */
+	.slide-info {
+		top: -6%;
+	}
+}

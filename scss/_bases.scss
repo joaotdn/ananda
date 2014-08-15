@@ -16,11 +16,11 @@ ul {
 //Classes utilitárias
 //-----------------------------------------------------
 .rel {
-	position: relative;
+	position: relative !important;
 }
 
 .abs {
-	position: absolute;
+	position: absolute !important;
 }
 
 .text-up {
@@ -112,4 +112,15 @@ ul {
 
 a {
 	@extend .trs-color;
+}
+
+//Botões
+.button-white {
+	@include button($bg: white);
+	color: $secondary-color;
+
+	&:hover {
+		color: white;
+		background-color: $primary-color;
+	}
 }

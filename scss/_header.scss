@@ -8,7 +8,7 @@
 #main-menu {
 	margin-top: rem-calc(40);
 
-	a {
+	a:not(.button) {
 		color: #555;
 
 		&:hover {
@@ -16,7 +16,13 @@
 			border-color: $primary-color;
 		}	
 	}
+
+	.button {
+		line-height: 1;
+		margin-bottom: 10px;
+	}
 }
+
 .social-links {
 	margin-bottom: 0;
 	
@@ -29,5 +35,19 @@
 
 	li:not(:first-child) {
 		margin-left: rem-calc(5);
+	}
+}
+
+//MENU-MOBILE
+#menu-mobile {
+	z-index: 9999;
+	width: 100% !important;
+
+	&.open {
+		left: 0 !important;
+	}	
+
+	a {
+		color: #fff !important;
 	}
 }

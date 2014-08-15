@@ -44,7 +44,7 @@ slideshow.on( 'cycle-resumed', function( e, opts, timeoutRemaining ) {
 });
 
 /*
-	Chamar wow apos terminar slide
+	Chamar wow antes de iniciar slide
  */
 $( '.list-slide' ).on( 'cycle-before', function( event, opts ) {
     wow = new WOW(
@@ -55,3 +55,13 @@ $( '.list-slide' ).on( 'cycle-before', function( event, opts ) {
     );
     wow.init();
 });
+
+/*
+	Copia conteudo do menu principal para o menu mobile
+ */
+$('li','.container-main-menu').clone().appendTo('#menu-mobile');
+
+/*
+	Copia conteudo do rodape para rodape mobile
+ */
+$('.footer-content').clone().appendTo('#footer-mobile');
