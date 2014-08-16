@@ -1,12 +1,18 @@
 .icon-an-loader {
   background-image: url(images/spritesheet.png);
-  background-position: 0px -48px;
+  background-position: -99px -311px;
   width: 43px;
   height: 43px;
 }
-.icon-footer {
+.icon-escola {
   background-image: url(images/spritesheet.png);
   background-position: 0px 0px;
+  width: 375px;
+  height: 311px;
+}
+.icon-footer {
+  background-image: url(images/spritesheet.png);
+  background-position: 0px -311px;
   width: 99px;
   height: 48px;
 }

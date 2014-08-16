@@ -65,3 +65,15 @@ $('li','.container-main-menu').clone().appendTo('#menu-mobile');
 	Copia conteudo do rodape para rodape mobile
  */
 $('.footer-content').clone().appendTo('#footer-mobile');
+
+/*
+  Mostrar sobre o profissional mobile
+ */
+$('a[data-reveal-id="about-modal"]').on('touchstart click',function() {
+  var parent = $(this).parents('figure'),
+      name   = parent.find('.name').text(),
+      desc   = parent.find('.about-professional > p').text();
+
+  $('h2','#about-modal').html(name);
+  $('p','#about-modal').html(desc);
+});

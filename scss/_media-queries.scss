@@ -27,11 +27,23 @@
 		height: rem-calc(400);
 	}
 
+	//Titulos
+	.panel-title {
+		font-size: rem-calc(32);
+	}
+
 	.big-title {
 		top: 0;
 		h1 {
 			font-size: rem-calc(24);
 		}
+	}
+
+	/*
+		Profissionais
+	 */
+	.about-professional {
+		display: none !important;
 	}
 }
 
@@ -57,6 +69,18 @@
 			font-size: rem-calc(50);
 		}
 	}
+
+	//Titulos
+	.panel-title {
+		font-size: rem-calc(52);
+	}
+
+	/*
+		Profissionais
+	 */
+	.about-professional {
+	 	display: none !important;
+	 }
 }
 
 @media #{$large-up} {

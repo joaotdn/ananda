@@ -65,9 +65,42 @@
 	}
 }
 
+.content-thumb-inner {
+	height: rem-calc(300);
+}
+
 .social-actions {
 	figure {
 		height: rem-calc(200);
+	}
+}
+
+.small-text {
+	font-size: rem-calc(12);
+}
+
+.less-opacity {
+	@extend .trs;
+	&:hover {
+		opacity: .7;
+	}
+}
+
+//Titulos
+.panel-title {
+	background-color: #FFF;
+	font-size: rem-calc(80);
+	font-weight: 800;
+	color: $primary-color;
+	padding: rem-calc(20) 0 rem-calc(11) 0;
+
+	&.no-bg {
+		background-color: transparent;
+	}
+
+	&.info {
+		font-size: rem-calc(14) !important;
+		color: #333;
 	}
 }
 
