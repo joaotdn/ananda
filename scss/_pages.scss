@@ -94,3 +94,47 @@ a[data-reveal-id="about-modal"] {
 	height: 100%;
 	z-index: 99;
 }
+
+/*
+	Serviços
+ */
+.list-services {
+	figure {
+		background-color: #FFF;
+		height: rem-calc(300);
+	}
+
+	figcaption {
+		padding: rem-calc(20);
+	}
+
+	li {
+		&:nth-child(2n) {
+			.service-thumb {
+				left: 50%;
+			}
+			figcaption {
+				@extend .left;
+			}
+		}
+	}
+}
+
+.service-thumb {
+	height: 100%;
+	left: 0;
+}
+
+/*
+	Ações Sociais
+ */
+.action-slide {
+	height: rem-calc(500);
+}
+
+/*
+	Contato
+ */
+#map_canvas {
+	height: rem-calc(500);
+}

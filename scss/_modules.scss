@@ -92,7 +92,8 @@
 	font-size: rem-calc(80);
 	font-weight: 800;
 	color: $primary-color;
-	padding: rem-calc(20) 0 rem-calc(11) 0;
+	padding: rem-calc(6) 0 rem-calc(11) 0;
+	margin-top: 0;
 
 	&.no-bg {
 		background-color: transparent;

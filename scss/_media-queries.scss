@@ -45,6 +45,13 @@
 	.about-professional {
 		display: none !important;
 	}
+
+	/*
+		Serviços
+	 */
+	.action-slide {
+		height: rem-calc(320);
+	}
 }
 
 @media #{$medium-only} {

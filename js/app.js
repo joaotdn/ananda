@@ -44,19 +44,6 @@ slideshow.on( 'cycle-resumed', function( e, opts, timeoutRemaining ) {
 });
 
 /*
-	Chamar wow antes de iniciar slide
- */
-$( '.list-slide' ).on( 'cycle-before', function( event, opts ) {
-    wow = new WOW(
-      {
-        animateClass: 'animated',
-        offset:       100
-      }
-    );
-    wow.init();
-});
-
-/*
 	Copia conteudo do menu principal para o menu mobile
  */
 $('li','.container-main-menu').clone().appendTo('#menu-mobile');
@@ -77,3 +64,15 @@ $('a[data-reveal-id="about-modal"]').on('touchstart click',function() {
   $('h2','#about-modal').html(name);
   $('p','#about-modal').html(desc);
 });
+
+function initialize() {
+        var mapOptions = {
+          center: new google.maps.LatLng(-34.397, 150.644),
+          zoom: 8,
+          mapTypeId: google.maps.MapTypeId.ROADMAP
+        };
+        var map = new google.maps.Map(document.getElementById("map_canvas"),
+            mapOptions);
+      }
+
+initialize();
