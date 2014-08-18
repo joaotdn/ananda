@@ -28,8 +28,11 @@
 	}
 
 	//Titulos
-	.panel-title {
+	.panel-title, .animated-title {
 		font-size: rem-calc(32);
+	}
+	.animated-title {
+		top: 0;
 	}
 
 	.big-title {
@@ -50,6 +53,13 @@
 		Serviços
 	 */
 	.action-slide {
+		height: rem-calc(320);
+	}
+
+	/*
+		Contato
+	 */
+	.google-maps {
 		height: rem-calc(320);
 	}
 }
@@ -78,8 +88,11 @@
 	}
 
 	//Titulos
-	.panel-title {
+	.panel-title, .animated-title {
 		font-size: rem-calc(52);
+	}
+	.animated-title {
+		top: 0;
 	}
 
 	/*
@@ -88,6 +101,13 @@
 	.about-professional {
 	 	display: none !important;
 	 }
+
+	 /*
+	 	Contato
+	  */
+	 .google-maps {
+		height: rem-calc(400);
+	}
 }
 
 @media #{$large-up} {

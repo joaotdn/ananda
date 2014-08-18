@@ -13,6 +13,8 @@ ul {
 	margin: 0;
 }
 
+
+
 //Classes utilitárias
 //-----------------------------------------------------
 .rel {
@@ -131,4 +133,19 @@ a {
 		color: white;
 		background-color: $primary-color;
 	}
+}
+
+input[type="submit"] {
+	@extend .text-up;
+	@extend .trs;
+	background-color: #333;
+	color: white;
+	font-size: rem-calc(16);
+	border: none !important;
+	padding: rem-calc(10);
+	cursor: pointer;
+
+	&:hover {
+		background-color: rgba(#333,.8);	
+	}	
 }

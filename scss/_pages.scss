@@ -87,6 +87,10 @@
 	left: 100%;
 	padding: rem-calc(20);
 	z-index: 99;
+
+	&.show-in-left {
+		left: rem-calc(-300);
+	}
 }
 
 a[data-reveal-id="about-modal"] {
@@ -137,4 +141,23 @@ a[data-reveal-id="about-modal"] {
  */
 #map_canvas {
 	height: rem-calc(500);
+}
+
+.google-maps {
+	height: rem-calc(600);
+}
+
+.place-card, .place-card-large {
+	opacity: 0 !important;
+}
+
+.address {
+	right: rem-calc(10);
+	padding: rem-calc(20);
+	background: $body-bg;
+	top: rem-calc(-120);
+
+	p {
+		margin-bottom: rem-calc(10);
+	}
 }

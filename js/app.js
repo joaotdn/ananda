@@ -65,14 +65,81 @@ $('a[data-reveal-id="about-modal"]').on('touchstart click',function() {
   $('p','#about-modal').html(desc);
 });
 
-function initialize() {
-        var mapOptions = {
-          center: new google.maps.LatLng(-34.397, 150.644),
-          zoom: 8,
-          mapTypeId: google.maps.MapTypeId.ROADMAP
-        };
-        var map = new google.maps.Map(document.getElementById("map_canvas"),
-            mapOptions);
-      }
+$('.about-professional').on('mouseover',function() { $(this).stop().fadeOut('fast'); });
 
-initialize();
+$('li','.list-professionals').hover(
+  function() {
+    var openProfessionalModal = $('a[data-reveal-id="about-modal"]',this).css('display');
+    if(openProfessionalModal != 'block') {
+      $(this).find('.about-professional').stop().fadeIn('fast');
+    }  
+  },
+  function() {
+    $(this).find('.about-professional').stop().fadeOut('fast');
+  }
+);
+
+function worksList() {
+  //var count = $('article','.list-articles').length;
+  $.each($('.about-professional'),function(i) {
+    switch(i % 1000) {
+      case 3: 
+        $(this).addClass('show-in-left');
+      break;
+
+      case 4: 
+        $(this).addClass('show-in-left');
+      break;
+
+      case 9: 
+        $(this).addClass('show-in-left');
+      break;
+
+      case 10: 
+        $(this).addClass('show-in-left');
+      break;
+
+      case 15: 
+        $(this).addClass('show-in-left');
+      break;
+
+      case 16: 
+        $(this).addClass('show-in-left');
+      break;
+
+      case 21: 
+        $(this).addClass('show-in-left');
+      break;
+
+      case 22: 
+        $(this).addClass('show-in-left');
+      break;
+
+      case 21: 
+        $(this).addClass('show-in-left');
+      break;
+
+      case 22: 
+        $(this).addClass('show-in-left');
+      break;
+
+      case 27: 
+        $(this).addClass('show-in-left');
+      break;
+
+      case 28: 
+        $(this).addClass('show-in-left');
+      break;
+
+      case 35: 
+        $(this).addClass('show-in-left');
+      break;
+
+      case 36: 
+        $(this).addClass('show-in-left');
+      break;
+    }
+  });
+};
+worksList();
+

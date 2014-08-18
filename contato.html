@@ -6,8 +6,6 @@
     <title>Centro Ananda | Práticas Integrativas</title>
     <link rel="stylesheet" href="style.css" />
     <script src="//cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.1/modernizr.min.js"></script>
-    <script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?key=AIzaSyBppVKQ8wTBE-y71puDl4nLxy2B3T-_2x4&sensor=true"></script>
-    <!--<script src="//cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.1/modernizr.min.js"></script>-->
   </head>
   <body>
     <div class="row">
@@ -58,10 +56,83 @@
         <div class="mbt small-12 left"></div>
 
         <!-- INICIO CONTATO -->
-        <section class="page-thumb-big small-12 columns">
-         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3958.779269562259!2d-34.84292900000001!3d-7.151501599999994!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7acc2925e600ea1%3A0xd664f788cc2179fe!2sR.+dos+Eucal%C3%ADptos%2C+284+-+Anat%C3%B3lia%2C+Jo%C3%A3o+Pessoa+-+PB%2C+58052-060!5e0!3m2!1spt-BR!2sbr!4v1408289783930" width="960" height="450" frameborder="0" style="border:0"></iframe>
-        </section>
+        <section class="page-thumb-big small-12 columns google-maps rel">
+          <header>
+            <h1 class="abs animated-title text-low wow fadeInUp" data-wow-duration="1500ms">Contato</h1>
+          </header>
+
+          <div class="show-for-large-up">
+            <script type="text/javascript" src="http://www.webestools.com/google_map_gen.js?lati=-7.150999&long=-34.843471&zoom=17&width=960&height=600&mapType=normal&map_btn_normal=yes&map_btn_satelite=yes&map_btn_mixte=yes&map_small=yes&marqueur=yes&info_bulle=Centro%20Ananda%20-%20Pr%C3%A1ticas%20Integrativas"></script>
+          </div>
+
+          <div class="show-for-medium-only">
+            <script type="text/javascript" src="http://www.webestools.com/google_map_gen.js?lati=-7.150999&long=-34.843471&zoom=17&width=748&height=400&mapType=normal&map_btn_normal=yes&map_btn_satelite=yes&map_btn_mixte=yes&map_small=yes&marqueur=yes&info_bulle=Centro%20Ananda%20-%20Pr%C3%A1ticas%20Integrativas"></script>
+          </div>
+
+          <div class="show-for-small-only text-center">
+            <script type="text/javascript" src="http://www.webestools.com/google_map_gen.js?lati=-7.150999&long=-34.843471&zoom=17&width=320&height=320&mapType=normal&map_btn_normal=yes&map_btn_satelite=yes&map_btn_mixte=yes&map_small=yes&marqueur=yes&info_bulle=Centro%20Ananda%20-%20Pr%C3%A1ticas%20Integrativas"></script>
+          </div>
+        </section><!-- google-maps -->
         <div class="mbt small-12 left"></div>
+
+        <section class="small-12 left rel">
+          <form action="" class="small-12 medium-8 large-8 left ananda-form">
+            
+            <div class="small-12 left">
+              <div class="small-12 medium-6 large-6 columns">
+                <h3>Nome</h3>
+                <p><input type="text"></p>
+              </div>
+              <div class="small-12 medium-6 large-6 columns">
+                <h3>Email</h3>
+                <p><input type="text"></p>
+              </div>
+            </div>
+
+            <div class="small-12 left">
+              <div class="small-12 medium-6 large-6 columns">
+                <h3>Mensagem</h3>
+                <p><textarea name="" id="" cols="30" rows="10"></textarea></p>
+              </div>
+              <div class="small-12 medium-6 large-6 columns">
+                <h3>Telefone</h3>
+                <p><input type="text"></p>
+                <p><input type="submit" value="Enviar"></p>
+              </div>
+            </div>
+          </form><!-- // formulario de contato -->
+
+          <div class="address small-4 hide-for-small abs">
+            <h1>Endereço</h1>
+            <p>Rua dos Eucaliptos, 284</p>
+            <p>Bancários, João Pessoa</p>
+            <p>Paraíba</p>
+            <p>CEP 58052-060</p>
+
+            <h1>Telefones</h1>
+            <p>83 8680 3028</p>
+            <p>83 3241 4807</p>
+
+            <h1>Email</h1>
+            <p>contato@centroananda.com.br</p>
+          </div><!-- // dados de contato -->
+
+          <div class="address-mobile small-12 columns show-for-small-only">
+            <h1>Endereço</h1>
+            <p>Rua dos Eucaliptos, 284</p>
+            <p>Bancários, João Pessoa</p>
+            <p>Paraíba</p>
+            <p>CEP 58052-060</p>
+
+            <h1>Telefones</h1>
+            <p>83 8680 3028</p>
+            <p>83 3241 4807</p>
+
+            <h1>Email</h1>
+            <p>contato@centroananda.com.br</p>
+          </div>
+
+        </section>
         <!-- FIM CONTATO -->
       
         <!-- INICIO RODAPE DESKTOP -->
@@ -90,8 +161,7 @@
     <figure id="an-preload" class="small-12 text-center">
       <div class="icon-an-loader centered"></div>
     </figure>
-    <!--<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>-->
-    <script src="bower_components/jquery/dist/jquery.min.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
     <script src="scripts.js"></script>
     <div id="fb-root"></div>
     <script>(function(d, s, id) {

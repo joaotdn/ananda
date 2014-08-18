@@ -105,6 +105,17 @@
 	}
 }
 
+.animated-title {
+	right: rem-calc(10);
+	top: -6%;
+	font-size: rem-calc(100);
+	color: white;
+	background-color: $primary-color;
+	margin: 0;
+	padding: rem-calc(20);
+	padding-top: rem-calc(10);
+}
+
 //Rodape
 .icon-footer {
 	margin-right: rem-calc(20);
