@@ -1,5 +1,12 @@
 @media #{$small-only} {
 	/*
+		Seletores
+	 */
+	h1, h2 {
+		font-size: rem-calc(24);
+	}
+
+	/*
 		Slide principal
 	 */
 	.slide-info {

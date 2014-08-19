@@ -1,20 +1,20 @@
 <?php
 
-function agenda_init() {
+function acoes_init() {
   $labels = array(
-    'name'               => 'Agenda',
-    'singular_name'      => 'Agenda',
+    'name'               => 'A&ccedil;&otilde;es Sociais',
+    'singular_name'      => 'A&ccedil;&atilde;o Social',
     'add_new'            => 'Adicionar Nova',
-    'add_new_item'       => 'Adicionar nova atividade',
-    'edit_item'          => 'Editar atividade',
-    'new_item'           => 'Nova atividade',
-    'all_items'          => 'Todas as atividades',
-    'view_item'          => 'Ver atividade',
-    'search_items'       => 'Buscar atividade',
+    'add_new_item'       => 'Adicionar nova a&ccedil;&atilde;o',
+    'edit_item'          => 'Editar a&ccedil;&atilde;o',
+    'new_item'           => 'Nova a&ccedil;&atilde;o',
+    'all_items'          => 'Todas as a&ccedil;&atilde;os',
+    'view_item'          => 'Ver a&ccedil;&atilde;o',
+    'search_items'       => 'Buscar a&ccedil;&atilde;o',
     'not_found'          => 'N&atilde;o encontrada',
     'not_found_in_trash' => 'N&atilde;o encontrada',
     'parent_item_colon'  => '',
-    'menu_name'          => 'Agenda'
+    'menu_name'          => 'A&ccedil;&otilde;es Sociais'
   );
 
   $args = array(
@@ -24,7 +24,7 @@ function agenda_init() {
     'show_ui'            => true,
     'show_in_menu'       => true,
     'query_var'          => true,
-    'rewrite'            => array( 'slug' => 'agenda' ),
+    'rewrite'            => array( 'slug' => 'acoes-sociais' ),
     //'menu_icon'           => get_stylesheet_directory_uri() . '/images/works.png',
     'capability_type'    => 'post',
     'menu_position'      => 1,
@@ -34,9 +34,9 @@ function agenda_init() {
     'supports'           => array( 'title','thumbnail','excerpt')
   );
 
-  register_post_type( 'agenda', $args );
+  register_post_type( 'acoes', $args );
 }
 
-add_action( 'init', 'agenda_init' );
+add_action( 'init', 'acoes_init' );
 
 ?>

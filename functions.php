@@ -72,6 +72,10 @@ remove_filter( 'the_excerpt', 'wpautop' );
 //Agenda
 require_once ( get_stylesheet_directory() . '/post-types/agenda.php' );
 
+//Produtos
+require_once ( get_stylesheet_directory() . '/post-types/produtos.php' );
 
+//Ações Sociais
+require_once ( get_stylesheet_directory() . '/post-types/acoes_sociais.php' );
 
 ?>

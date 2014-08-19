@@ -7,6 +7,8 @@
           data-cycle-slides="> div"
           data-cycle-pager=".pager-container"
           data-cycle-pager-template="<span></span>"
+          data-cycle-swipe="true"
+          data-cycle-swipe-fx="scrollHorz"
         >    
           <section id="progress"></section>
           

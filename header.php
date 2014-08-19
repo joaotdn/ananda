@@ -69,9 +69,9 @@
           ?>
           <ul class="social-links inline-list small-12 left">
             <?php if($instagram != ''): ?>
-            <li><a href="#" title="Siga-nos no Instagram" target="_blank"><span class="icon-instagram"></span></a></li>
+            <li><a href="<?php echo $facebook; ?>" title="Siga-nos no Instagram" target="_blank"><span class="icon-instagram"></span></a></li>
             <?php endif; if($facebook): ?>
-            <li><a href="#" title="Siga-nos no Facebook" target="_blank"><span class="icon-facebook"></span></a></li>
+            <li><a href="<?php echo $instagram; ?>" title="Siga-nos no Facebook" target="_blank"><span class="icon-facebook"></span></a></li>
             <?php endif ?>
           </ul>
           <!-- // redes socias -->

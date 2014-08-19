@@ -1,6 +1,8 @@
-      <?php if(!is_home()): ?>
-      
-      <?php endif; ?>
+      <?php 
+        if(!is_home()) {
+          include_once 'includes/footer_desktop.php';
+        }
+      ?>
 
       <!-- INICIO RODAPE MOBILE -->
       <footer id="footer-mobile" class="small-12 columns hide-for-large-up"></footer>
