@@ -13,7 +13,11 @@ ul {
 	margin: 0;
 }
 
-
+.current_page_item, .current-menu-item {
+	a {
+		color: $primary-color !important;
+	}
+}
 
 //Classes utilitárias
 //-----------------------------------------------------

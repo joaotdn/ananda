@@ -78,4 +78,45 @@ require_once ( get_stylesheet_directory() . '/post-types/produtos.php' );
 //Ações Sociais
 require_once ( get_stylesheet_directory() . '/post-types/acoes_sociais.php' );
 
+/*
+  Formulario de login
+ */
+function my_login_logo_url() {
+    return "http://imaginaria.cc";
+}
+add_filter( 'login_headerurl', 'my_login_logo_url' );
+
+function my_login_logo_url_title() {
+    return 'Imaginária';
+}
+add_filter( 'login_headertitle', 'my_login_logo_url_title' );
+
+function my_login_logo() { ?>
+    <style type="text/css">
+        body.login {
+          background-color: #fff;
+        }
+        body.login div#login h1 a {
+            background-image: url(<?php echo get_stylesheet_directory_uri(); ?>/images/admin-logo.png);
+            padding-bottom: 30px;
+        }
+        body.login div#login form#loginform {
+          background-color: #f1f1f1;
+        }
+        body.login div#login form#loginform p label {
+          color: #ef2b39;
+        }
+        body.login div#login form#loginform p.submit input#wp-submit {
+          background-color: #ef2b39;
+          border-color: #ef2b39;
+        }
+        body.login div#login h1 a {
+          width: 100%;
+          height: 150px;
+          background-size: 200px;
+        }
+    </style>
+<?php }
+add_action( 'login_enqueue_scripts', 'my_login_logo' );
+
 ?>

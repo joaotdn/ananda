@@ -31,6 +31,12 @@
        */
       include_once 'includes/page_cursos.php';
 
+    } elseif (is_page('contato')) {
+      /*
+        Contato
+       */
+      include_once 'includes/page_contato.php';
+
     } else {
       //incluir modelo padrão para pagina
       ?>
