@@ -5,21 +5,24 @@
 
         <!-- INICIO CURSOS -->
         <div class="small-12 columns">
-          <h1 class="small-12 left text-center text-low panel-title no-bg wow fadeInUp" data-wow-duration="1500ms">o Lojinha</h1>
+          <h1 class="font-body small-12 left text-up panel-title no-bg wow fadeInUp bd-bottom" data-wow-duration="1500ms">Agenda</h1>
           <div class="mbt small-12 left"></div>
-          <p class="font-body small-12 left text-center panel-title info">
-            <?php
-              $contato = get_page_by_title('Contato');
-              $email = get_field('an_email', $contato->ID);
-            ?>
-            Todos os produtos podem ser comprados na sede da Ananda.<br>Para consultar disponibilidade, envie um e-mail para <span class="blue"><?php echo $email; ?></span>
-          </p>
         </div>
 
+        </div><!-- //row -->
+        
+        <!-- CURSOS -->
         <nav class="list-courses small-12 columns">
+          
+          <div class="row">
+            <header class="small-12 left mbt">
+              <h3 class="text-up">Cursos</h3>
+            </header>
+          </div>
+
           <ul class="small-block-grid-1 medium-block-grid-2 large-block-grid-2">
             <?php
-              $args = array( 'post_type' => 'produtos', 'posts_per_page' => -1, 'orderby' => 'date' ); 
+              $args = array( 'taxonomy' => 'categorias-cursos', 'term' => 'cursos',  'posts_per_page' => 10, 'orderby' => 'date' ); 
               $loop = new WP_Query( $args );
               while ( $loop->have_posts() ) : $loop->the_post();
 
@@ -35,7 +38,6 @@
                   <div class="small-12 columns">
                     <h2 class="text-up small-12 blue"><?php the_title(); ?></h2>
                     <p class="small-text"><?php the_excerpt(); ?></p>
-                    <h3 class="text-up" style="color: #555;">R$ <?php echo get_field('preco',$post->ID); ?></h3>
                   </div>
                 </article>
               </div>
@@ -43,6 +45,11 @@
             <?php endwhile; wp_reset_query(); ?>
           </ul>
         </nav>
+        <!-- // CURSOS -->
+
+        <!-- reinicio .row -->
+        <div class="row">
+
         <div class="mbt small-12 left"></div>
         <!-- FIM CURSOS -->
 

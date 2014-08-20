@@ -25,6 +25,10 @@ ul {
 	position: relative !important;
 }
 
+.border-bottom {
+	border-bottom: 8px solid $primary-color;
+}
+
 .abs {
 	position: absolute !important;
 }

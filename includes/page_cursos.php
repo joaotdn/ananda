@@ -6,6 +6,7 @@
         <!-- INICIO CURSOS -->
         <div class="small-12 columns">
           <h1 class="small-12 left text-center text-low panel-title no-bg wow fadeInUp" data-wow-duration="1500ms">Cursos</h1>
+          <div class="small-12 left mbt"></div>
           <p class="font-body small-12 left text-center panel-title info">
             <?php
               $contato = get_page_by_title('Contato');
