@@ -78,6 +78,10 @@ ul {
 	color: $primary-color !important;
 }
 
+.gray {
+	color: #555;
+}
+
 .trs {
 	@include transition;
 }
@@ -118,6 +122,10 @@ ul {
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-position: center;
+}
+
+.bd-bottom {
+	border-bottom: 8px solid $primary-color;
 }
 
 a {

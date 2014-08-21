@@ -14,14 +14,6 @@
     <link rel="icon" href="<?php echo get_template_directory_uri(); ?>/favicon.ico" type="image/x-ico"/>
     <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/style.css" />
     <script src="//cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.1/modernizr.min.js"></script>
-    <script>
-      //<![CDATA[
-      var getData = {
-        'urlDir':'<?php bloginfo('template_directory'); ?>/',
-        'ajaxDir':'<?php echo stripslashes(get_admin_url()).'admin-ajax.php'; ?>'
-      }
-      //]]>
-    </script>
     <?php wp_head(); ?>
   </head>
   <body>
@@ -90,3 +82,4 @@
         </nav>
       </header>
       <!-- FIM HEADER -->
+      <?php if(is_post_type_archive('agenda')) { echo '</div><!-- //row [agenda] -->'; } ?>

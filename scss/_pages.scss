@@ -161,3 +161,23 @@ a[data-reveal-id="about-modal"] {
 		margin-bottom: rem-calc(10);
 	}
 }
+
+/*
+	Agenda
+ */
+.flowslider {
+	height: rem-calc(600);
+	margin: 0 !important;
+	width: 100% !important;
+
+	li {
+		height: 100%;
+		width: rem-calc(360);
+		overflow: hidden;
+		margin: 0 rem-calc(10);
+	}
+}
+.www_FlowSlider_com-branding {
+	display: none !important;
+	@include opacity(0);
+}

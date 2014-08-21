@@ -143,3 +143,16 @@ function worksList() {
 };
 worksList();
 
+//Gerar timeline
+FlowSlider(".flowslider", {
+    startPosition: 0.0,
+    position: 0.5,
+    marginStart: 50,
+    marginEnd: 100,
+    controllerOptions: [{
+        mouseStart: 0,
+        mouseEnd: 100
+    }]
+});
+
+

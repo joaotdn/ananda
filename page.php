@@ -25,7 +25,7 @@
        */
       include_once 'includes/page_escola.php';
 
-    } elseif(is_page('cursos')) {
+    } elseif(is_page('cursos') || is_page('cursos-2')) {
       /*
         Cursos
        */

@@ -65,6 +65,24 @@ function get_excerpt($l) {
 }
 remove_filter( 'the_excerpt', 'wpautop' );
 
+//Pega o nome do custom term no loop
+function custom_taxonomies_terms_names() {
+  global $post, $post_id;
+  $post = &get_post($post->ID);
+  $post_type = $post->post_type;
+  $taxonomies = get_object_taxonomies($post_type);
+  foreach ($taxonomies as $taxonomy) {
+    $terms = get_the_terms( $post->ID, $taxonomy );
+    if ( !empty( $terms ) ) {
+      $out = array();
+      foreach ( $terms as $term )
+        $out[] = $term->name;
+      $return = join( ', ', $out );
+    }
+  }
+  return $return;
+}
+
 /**
  * Custom Post Types
  */

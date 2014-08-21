@@ -19,7 +19,6 @@
 
             global $post;
             $thumb = wp_get_attachment_image_src( get_post_thumbnail_id($post->ID), 'large' );
-            $categoria = get_field('ag_categoria',$post->ID);
             $master = get_field('ag_orientador',$post->ID);
             $datas = get_field('ag_data',$post->ID);
           ?>
@@ -29,7 +28,7 @@
             </a>
             
             <article class="small-12 medium-5 large-4 abs slide-info wow fadeInUp" data-wow-duration="1500ms">
-              <?php if($categoria != ''): ?> <h4 class="text-low"><?php echo $categoria; ?></h4><?php endif; ?>
+              <h4 class="text-low"><?php echo custom_taxonomies_terms_names(); ?></h4>
               <h1><a href="<?php echo get_post_type_archive_link('agenda'); ?>" class="white text-up" title="<?php the_title(); ?>"><?php echo the_title(); ?></a></h1>
               <?php if($master != ''): ?><p class="text-up white">com <?php echo $master; ?></p><?php endif; ?>
               <?php if($datas != ''): ?><h3 class="text-low"><?php echo $datas; ?></h3><?php endif; ?>

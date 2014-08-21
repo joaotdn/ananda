@@ -1,8 +1,14 @@
 .icon-an-loader {
   background-image: url(images/spritesheet.png);
-  background-position: -99px -311px;
+  background-position: -375px -176px;
   width: 43px;
   height: 43px;
+}
+.icon-anterior {
+  background-image: url(images/spritesheet.png);
+  background-position: -375px 0px;
+  width: 88px;
+  height: 88px;
 }
 .icon-escola {
   background-image: url(images/spritesheet.png);
@@ -15,4 +21,10 @@
   background-position: 0px -311px;
   width: 99px;
   height: 48px;
+}
+.icon-proximo {
+  background-image: url(images/spritesheet.png);
+  background-position: -375px -88px;
+  width: 88px;
+  height: 88px;
 }

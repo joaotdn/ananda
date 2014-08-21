@@ -1,3 +1,6 @@
+      
+      <?php if(is_post_type_archive('agenda')) { echo '<div class="row"><!-- //row [agenda] -->'; } ?>
+      
       <?php 
         if(!is_home()) {
           include_once 'includes/footer_desktop.php';
